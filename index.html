@@ -289,15 +289,6 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
       color: #1B2A4A;
       cursor: pointer;
     }
-    .desk-hotspot::after {
-      position: absolute;
-      inset: 3px;
-      border: 1px solid transparent;
-      border-radius: 13px;
-      content: "";
-      pointer-events: none;
-      transition: border-color 160ms ease, box-shadow 160ms ease;
-    }
     .hotspot-label {
       position: absolute;
       z-index: 1;
@@ -352,8 +343,8 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
       left: 100%;
       transform: translateY(-50%);
     }
-    .desk-hotspot.is-current::after { border-color: #1F6B45; }
-    .desk-hotspot.is-current .hotspot-label { border-color: #1F6B45; }
+    .desk-hotspot:focus-visible { outline: none; }
+    .desk-hotspot:focus-visible .hotspot-label { outline: 3px solid #1F6B45; outline-offset: 5px; }
     .binder-caption {
       margin: 17px 0 0;
       color: #1B2A4A;
@@ -374,10 +365,6 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
       .step-item:nth-child(7) .hotspot-label { left: -12px; }
     }
     @media (hover: hover) {
-      .desk-hotspot:hover::after {
-        border-color: #1F6B45;
-        box-shadow: 0 0 0 2px rgba(251, 247, 238, 0.84);
-      }
       .desk-hotspot:hover .hotspot-label {
         border-color: #1F6B45;
         box-shadow: 0 5px 13px rgba(27, 42, 74, 0.22);
