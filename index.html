@@ -470,17 +470,32 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
       .dialog-navigation { gap: 16px; padding: 16px 22px calc(16px + env(safe-area-inset-bottom)); }
       .nav-button { min-width: 0; min-height: 54px; flex: 1; padding: 12px 16px; font-size: 20px; }
     }
-    /* Place the seven readable labels on nearby clear desk space, not across the objects. */
-    .step-item:nth-child(1) { left: 35%; top: 23%; }
-    .step-item:nth-child(2) { left: 69%; top: 34%; }
-    .step-item:nth-child(3) { left: 69%; top: 52%; }
-    .step-item:nth-child(4) { left: 87%; top: 67%; }
-    .step-item:nth-child(5) { left: 63%; top: 82%; }
-    .step-item:nth-child(6) { left: 30%; top: 55%; }
-    .step-item:nth-child(7) { left: 35%; top: 8%; }
-    .step-item:nth-child(n) .hotspot-label {
-      top: 50%; right: auto; bottom: auto; left: 50%;
-      transform: translate(-50%, -50%);
+    /* Preserve the original close-to-object card treatment around the rearranged step images. */
+    .step-item:nth-child(1) { left: 39%; top: 17%; }
+    .step-item:nth-child(2) { left: 73%; top: 20%; }
+    .step-item:nth-child(3) { left: 88%; top: 51%; }
+    .step-item:nth-child(4) { left: 72%; top: 82%; }
+    .step-item:nth-child(5) { left: 39%; top: 84%; }
+    .step-item:nth-child(6) { left: 11%; top: 69%; }
+    .step-item:nth-child(7) { left: 13%; top: 22%; }
+    .step-item:nth-child(1) .hotspot-label,
+    .step-item:nth-child(2) .hotspot-label,
+    .step-item:nth-child(7) .hotspot-label {
+      top: auto; right: auto; bottom: calc(100% - 28px); left: 50%;
+      transform: translateX(-50%);
+    }
+    .step-item:nth-child(3) .hotspot-label {
+      top: 50%; right: 100%; bottom: auto; left: auto;
+      transform: translateY(-50%);
+    }
+    .step-item:nth-child(4) .hotspot-label,
+    .step-item:nth-child(5) .hotspot-label {
+      top: calc(100% - 20px); right: auto; bottom: auto; left: 50%;
+      transform: translateX(-50%);
+    }
+    .step-item:nth-child(6) .hotspot-label {
+      top: 50%; right: auto; bottom: auto; left: 100%;
+      transform: translateY(-50%);
     }
     @media (prefers-reduced-motion: reduce) {
       *, *::before, *::after { transition: none !important; }
