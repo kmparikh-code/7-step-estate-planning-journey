@@ -270,13 +270,13 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
       height: clamp(78px, 7.35vw, 104px);
       transform: translate(-50%, -50%);
     }
-    .step-item:nth-child(1) { left: 39%; top: 17%; }
-    .step-item:nth-child(2) { left: 73%; top: 20%; }
-    .step-item:nth-child(3) { left: 88%; top: 51%; }
-    .step-item:nth-child(4) { left: 72%; top: 82%; }
-    .step-item:nth-child(5) { left: 39%; top: 84%; }
-    .step-item:nth-child(6) { left: 11%; top: 69%; }
-    .step-item:nth-child(7) { left: 13%; top: 22%; }
+    .step-item:nth-child(1) { left: 13%; top: 22%; }
+    .step-item:nth-child(2) { left: 39%; top: 17%; }
+    .step-item:nth-child(3) { left: 73%; top: 20%; }
+    .step-item:nth-child(4) { left: 88%; top: 51%; }
+    .step-item:nth-child(5) { left: 72%; top: 82%; }
+    .step-item:nth-child(6) { left: 39%; top: 84%; }
+    .step-item:nth-child(7) { left: 11%; top: 69%; }
     .desk-hotspot {
       position: relative;
       display: block;
@@ -322,23 +322,23 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
     .hotspot-text { display: block; }
     .step-item:nth-child(1) .hotspot-label,
     .step-item:nth-child(2) .hotspot-label,
-    .step-item:nth-child(7) .hotspot-label {
+    .step-item:nth-child(3) .hotspot-label {
       bottom: calc(100% - 28px);
       left: 50%;
       transform: translateX(-50%);
     }
-    .step-item:nth-child(3) .hotspot-label {
+    .step-item:nth-child(4) .hotspot-label {
       top: 50%;
       right: 100%;
       transform: translateY(-50%);
     }
-    .step-item:nth-child(4) .hotspot-label,
-    .step-item:nth-child(5) .hotspot-label {
+    .step-item:nth-child(5) .hotspot-label,
+    .step-item:nth-child(6) .hotspot-label {
       top: calc(100% - 20px);
       left: 50%;
       transform: translateX(-50%);
     }
-    .step-item:nth-child(6) .hotspot-label {
+    .step-item:nth-child(7) .hotspot-label {
       top: 50%;
       left: 100%;
       transform: translateY(-50%);
@@ -359,10 +359,10 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
     @media (max-width: 1100px) {
       .step-item { width: 104px; height: 48px; }
       .hotspot-label { min-width: 112px; max-width: 184px; min-height: 48px; line-height: 1.2; }
-      .step-item:nth-child(3) .hotspot-label { right: -12px; }
-      .step-item:nth-child(4) .hotspot-label,
-      .step-item:nth-child(5) .hotspot-label { top: calc(100% - 28px); }
-      .step-item:nth-child(6) .hotspot-label { left: -12px; }
+      .step-item:nth-child(4) .hotspot-label { right: -12px; }
+      .step-item:nth-child(5) .hotspot-label,
+      .step-item:nth-child(6) .hotspot-label { top: calc(100% - 28px); }
+      .step-item:nth-child(7) .hotspot-label { left: -12px; }
     }
     @media (hover: hover) {
       .desk-hotspot:hover .hotspot-label {
