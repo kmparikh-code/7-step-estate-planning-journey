@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#1B2A4A">
-  <title>Your seven-step estate planning journey</title>
+  <title>Corrected original morning cards — local review</title>
 <meta name="font-license-librebaskerville" content="Copyright 2012 The Libre Baskerville Project Authors (https://github.com/impallari/Libre-Baskerville) with Reserved Font Name Libre Baskerville.
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
@@ -470,33 +470,11 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
       .dialog-navigation { gap: 16px; padding: 16px 22px calc(16px + env(safe-area-inset-bottom)); }
       .nav-button { min-width: 0; min-height: 54px; flex: 1; padding: 12px 16px; font-size: 20px; }
     }
-    /* Preserve the original close-to-object card treatment around the rearranged step images. */
-    .step-item:nth-child(1) { left: 39%; top: 17%; }
-    .step-item:nth-child(2) { left: 73%; top: 20%; }
-    .step-item:nth-child(3) { left: 88%; top: 51%; }
-    .step-item:nth-child(4) { left: 72%; top: 82%; }
-    .step-item:nth-child(5) { left: 39%; top: 84%; }
-    .step-item:nth-child(6) { left: 11%; top: 69%; }
-    .step-item:nth-child(7) { left: 13%; top: 22%; }
-    .step-item:nth-child(1) .hotspot-label,
-    .step-item:nth-child(2) .hotspot-label,
-    .step-item:nth-child(7) .hotspot-label {
-      top: auto; right: auto; bottom: calc(100% - 28px); left: 50%;
-      transform: translateX(-50%);
-    }
-    .step-item:nth-child(3) .hotspot-label {
-      top: 50%; right: 100%; bottom: auto; left: auto;
-      transform: translateY(-50%);
-    }
-    .step-item:nth-child(4) .hotspot-label,
-    .step-item:nth-child(5) .hotspot-label {
-      top: calc(100% - 20px); right: auto; bottom: auto; left: 50%;
-      transform: translateX(-50%);
-    }
-    .step-item:nth-child(6) .hotspot-label {
-      top: 50%; right: auto; bottom: auto; left: 100%;
-      transform: translateY(-50%);
-    }
+    /* Local-only requested refinements to the original morning card slots. */
+    .step-item:nth-child(1) { left: 15%; }
+    .step-item:nth-child(3) .hotspot-label { bottom: calc(100% - 12px); }
+    .step-item:nth-child(5) .hotspot-label { top: calc(100% - 90px); }
+    .step-item:nth-child(7) .hotspot-label { top: calc(50% - 46px); }
     @media (prefers-reduced-motion: reduce) {
       *, *::before, *::after { transition: none !important; }
     }
@@ -505,15 +483,15 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 <body>
   <header class="page-header">
     <h1>Your seven-step estate planning journey</h1>
-    <p>Click any step to see what we do and what you do.</p>
+    <p>Click a numbered label to see who does what at each step.</p>
   </header>
   <main>
     <figure class="desk-figure">
       <div class="desk-window" id="desk-window" role="region" aria-label="Interactive estate planning desk" tabindex="0">
         <div class="desk-scene">
           <picture>
-            <source type="image/webp" srcset="estate-desk-acorn-768.webp 768w, estate-desk-acorn-1280.webp 1280w, estate-desk-acorn-2048.webp 2048w" sizes="(max-width: 668px) 640px, (max-width: 959px) calc(100vw - 28px), (max-width: 1440px) calc(100vw - 40px), 1400px">
-            <img class="desk-image" src="estate-desk-acorn.jpg" alt="A navy Mossy Creek Wealth estate plan binder on a wooden desk." width="2752" height="1536" fetchpriority="high" decoding="async">
+            <source type="image/webp" srcset="estate-desk-annual-review-768.webp 768w, estate-desk-annual-review-1280.webp 1280w, estate-desk-annual-review-2048.webp 2048w" sizes="(max-width: 668px) 640px, (max-width: 959px) calc(100vw - 28px), (max-width: 1440px) calc(100vw - 40px), 1400px">
+            <img class="desk-image" src="estate-desk-annual-review.jpg" alt="A navy Mossy Creek Wealth estate plan binder on a wooden desk with an Annual Plan Review note on the calendar." width="2752" height="1536" fetchpriority="high" decoding="async">
           </picture>
           <ol class="desk-hotspots" id="scene-step-list" aria-label="Estate planning steps"></ol>
         </div>
@@ -645,23 +623,23 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
         ],
         youDo: [
           "Review your summary.",
-          "Choose which of the people you named we may contact, and share their contact details.",
-          "Decide on one group call with everyone, or separate calls."
+          "Choose which of your named parties we may contact, and share their contact details.",
+          "Decide whether to hold one group video meeting with everyone or separate video meetings."
         ],
         link: { label: "", url: "" }
       },
       {
         label: "Introduce your people",
-        description: "Make sure the people you named know their role before it ever matters.",
+        description: "Make sure your named parties know their role before it ever matters.",
         weDo: [
-          "Record a short video with you that introduces Trent and tells your people when the call is.",
-          "Send each person a secure link with your video and three quick questions.",
-          "Hold a 30-minute call with you and your people to explain each role.",
-          "Send each person a written explanation of their role, then check in about a month later."
+          "Record a short video with you that introduces Trent and tells your named parties when the group video meeting will take place.",
+          "Send each named party a secure link with your video and three quick questions.",
+          "Host a 30-minute group video meeting with you and your named parties to explain each role.",
+          "Send each named party a written explanation of their role, then check in about a month later."
         ],
         youDo: [
-          "Give each person a quick heads-up first, by phone or text.",
-          "Book the group call with your family using Trent's scheduling link.",
+          "Give each named party a quick heads-up first, by phone or text.",
+          "Schedule the group video meeting with your named parties using Trent's scheduling link.",
           "Record your video with Trent."
         ],
         link: { label: "", url: "" }
@@ -672,7 +650,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
         weDo: [
           "Send you a short check-in once a year about life changes.",
           "Review your plan every three to five years, or sooner after a major life event.",
-          "Update your plan when something changes, and let the people you named know if their role changes."
+          "Update your plan when something changes, and let your named parties know if their role changes."
         ],
         youDo: [
           "Answer your yearly check-in.",
@@ -703,6 +681,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
     const nextButton = document.getElementById("next-step");
     let currentStep = 0;
     let returnFocusTo = null;
+    let returnFocusWithKeyboard = false;
     let previousOverflow = "";
     let pointerStartedOutside = false;
 
@@ -755,8 +734,9 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
       if (moveFocus && dialog.open) heading.focus({ preventScroll: true });
     }
 
-    function openStep(index, button) {
+    function openStep(index, button, returnFocusOnClose) {
       returnFocusTo = button;
+      returnFocusWithKeyboard = returnFocusOnClose;
       showStep(index, false);
       previousOverflow = document.body.style.overflow;
       document.body.style.overflow = "hidden";
@@ -791,13 +771,14 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
       text.textContent = step.label;
       label.append(number, document.createTextNode(" "), text);
       button.append(label);
-      button.addEventListener("click", () => openStep(index, button));
+      button.addEventListener("click", (event) => openStep(index, button, event.detail === 0));
       item.append(button);
       return item;
     }
 
-    steps.forEach((step, index) => {
-      sceneStepList.append(createSceneControl(step, index));
+    const slotOrder = [6, 0, 1, 2, 3, 4, 5];
+    slotOrder.forEach((index) => {
+      sceneStepList.append(createSceneControl(steps[index], index));
     });
 
     function updateDeskPanControls() {
@@ -835,14 +816,15 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
     });
     dialog.addEventListener("close", () => {
       document.body.style.overflow = previousOverflow;
-      document.querySelectorAll("[data-step-index]").forEach((button) => button.setAttribute("aria-expanded", "false"));
-      if (returnFocusTo && returnFocusTo.isConnected) {
+      updateStepControls(-1);
+      if (returnFocusWithKeyboard && returnFocusTo && returnFocusTo.isConnected) {
         const originalIndex = returnFocusTo.dataset.stepIndex;
         const visibleControl = returnFocusTo.getClientRects().length > 0 ? returnFocusTo :
           [...document.querySelectorAll(`[data-step-index="${originalIndex}"]`)]
             .find((button) => button.getClientRects().length > 0);
         if (visibleControl) visibleControl.focus({ preventScroll: true });
       }
+      returnFocusWithKeyboard = false;
     });
 
     function isOutsidePanel(event) {
