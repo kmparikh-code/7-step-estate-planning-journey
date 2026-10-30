@@ -531,7 +531,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
       </div>
       <nav class="dialog-navigation" aria-label="Step navigation">
         <button class="nav-button" id="previous-step" type="button">Previous</button>
-        <button class="nav-button next-button" id="next-step" type="button">Next</button>
+        <button class="nav-button next-button" id="next-step" type="button">Next step</button>
       </nav>
     </div>
   </dialog>
@@ -722,7 +722,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
         }
       }
       previousButton.disabled = index === 0;
-      nextButton.disabled = index === steps.length - 1;
+      nextButton.textContent = index === steps.length - 1 ? "Exit" : "Next step";
       dialogContent.scrollTop = 0;
       updateStepControls(index);
       if (moveFocus && dialog.open) heading.focus({ preventScroll: true });
@@ -800,6 +800,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
     });
     nextButton.addEventListener("click", () => {
       if (currentStep < steps.length - 1) showStep(currentStep + 1);
+      else closeDialog();
     });
     dialog.addEventListener("cancel", (event) => {
       event.preventDefault();
