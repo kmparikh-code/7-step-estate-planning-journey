@@ -470,6 +470,18 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
       .dialog-navigation { gap: 16px; padding: 16px 22px calc(16px + env(safe-area-inset-bottom)); }
       .nav-button { min-width: 0; min-height: 54px; flex: 1; padding: 12px 16px; font-size: 20px; }
     }
+    /* Place the seven readable labels on nearby clear desk space, not across the objects. */
+    .step-item:nth-child(1) { left: 35%; top: 23%; }
+    .step-item:nth-child(2) { left: 69%; top: 34%; }
+    .step-item:nth-child(3) { left: 69%; top: 52%; }
+    .step-item:nth-child(4) { left: 87%; top: 67%; }
+    .step-item:nth-child(5) { left: 63%; top: 82%; }
+    .step-item:nth-child(6) { left: 30%; top: 55%; }
+    .step-item:nth-child(7) { left: 35%; top: 8%; }
+    .step-item:nth-child(n) .hotspot-label {
+      top: 50%; right: auto; bottom: auto; left: 50%;
+      transform: translate(-50%, -50%);
+    }
     @media (prefers-reduced-motion: reduce) {
       *, *::before, *::after { transition: none !important; }
     }
@@ -485,8 +497,8 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
       <div class="desk-window" id="desk-window" role="region" aria-label="Interactive estate planning desk" tabindex="0">
         <div class="desk-scene">
           <picture>
-            <source type="image/webp" srcset="estate-desk-768.webp 768w, estate-desk-1280.webp 1280w, estate-desk-2048.webp 2048w" sizes="(max-width: 668px) 640px, (max-width: 959px) calc(100vw - 28px), (max-width: 1440px) calc(100vw - 40px), 1400px">
-            <img class="desk-image" src="estate-desk.jpg" alt="A navy Mossy Creek Wealth estate plan binder on a wooden desk." width="1600" height="900" fetchpriority="high" decoding="async">
+            <source type="image/webp" srcset="estate-desk-acorn-768.webp 768w, estate-desk-acorn-1280.webp 1280w, estate-desk-acorn-2048.webp 2048w" sizes="(max-width: 668px) 640px, (max-width: 959px) calc(100vw - 28px), (max-width: 1440px) calc(100vw - 40px), 1400px">
+            <img class="desk-image" src="estate-desk-acorn.jpg" alt="A navy Mossy Creek Wealth estate plan binder on a wooden desk." width="2752" height="1536" fetchpriority="high" decoding="async">
           </picture>
           <ol class="desk-hotspots" id="scene-step-list" aria-label="Estate planning steps"></ol>
         </div>
